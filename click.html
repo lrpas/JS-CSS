@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Mouse</title>
+    <style>
+    .link{
+        color:red;
+    }
+    </style>
+</head>
+<body >
+    <h2><a href="#" id="link">teste</a></h2>
+    <h4 id="title">buton</h4>
+   <button id="btn">clique</button> 
+   <h4 id="inv">INV</h4>
+
+<script>
+    var inv = document.getElementById("inv");
+    var botao = document.getElementById("btn");
+    var title = document.getElementById("title");
+    var link = document.getElementById("link");
+    isHidden = inv.hidden;
+    inv.hidden = true; //esconde o inv
+    
+    botao.addEventListener('click',function(){ //recebe dois parametros- > uma string nome do evento e segundo paramentro o que vai acontecer quando houver o click
+    title.remove();
+    inv.hidden=false; //mostra  o inv
+     
+ })
+
+ link.addEventListener('mouseover',function(){
+    link.classList.add("link"); // add  uma classe quando o botao for coisado
+ })
+
+ link.addEventListener('mouseleave',function(){
+    link.classList.remove("link"); // add  uma classe quando o botao for coisado
+ })
+
+ //elemento.adicionarevento('nome do vento ',funcao que executa pos evento)
+</script>
+
+</body>
+</html>

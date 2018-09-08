@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lari</title>
+
+<style>
+#box{
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 10px 5px, -10px -10px 2px 5px red ;
+    background: linear-gradient(to left, red,purple);
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius:200px;  
+}
+#box h1{
+    background-color: rgba(255,255,255,0.2);
+    font-size: 50px;
+    text-shadow: 2px 20px 20px black;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.center{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+
+.anima{
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 10px 5px ;
+    padding: 50px;
+    box-sizing: border-box;
+    background: blue;
+    border-radius:200px; 
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    
+}
+
+@keyframes anime{
+    from {background: blue;}
+    to { background: blueviolet;}
+}
+
+/*../ para subir o nivel da pasta para acessar outra imagem ../img/blabla.png */
+</style>
+
+</head>
+<body>
+    <div class="center page">
+        <div class="anima">
+            <h1>Lari linda</h1>
+        shooooow de top
+
+
+        </div>
+    </div>    
+</body>
+</html>
