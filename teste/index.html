@@ -6,21 +6,49 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contato.css">
 
     <title>Home</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            </script>
+   
 
 </head>
 
 <body>
-    <div>
+    <div id="idhome">
         <div id="navbar" class="navflex">
             <div><img src="imagens/logo.png" class="imgnav"> </div>
             <div>
                 <ol>
-                    <li> <a href="#">Home </a></li>
+                    <li> <a href="#idhome">Home </a></li>
                     <li> <a href="#">Sobre</a> </li>
-                    <li> <a href="#">Contato</a> </li>
+                    <li> <a href="#contact">Contato</a> </li>
 
                 </ol>
             </div>
@@ -49,9 +77,9 @@
         </div>
 
         <div>
-            <div id="navbarcell">
+            <div id="navbarmobile">
 
-                <div id="imgnavcell">
+                <div id="imgnavmobile">
 
                     <div><img src="imagens/logo.png" class="imgnav"></div>
 
@@ -70,20 +98,20 @@
                 </div>
             </div>
 
-            <div class="homecell">
+            <div class="homemobile">
 
-                <div class="boxhomecell">
+                <div class="boxhomemobile">
                     papapapapa
 
                 </div>
 
-                <div class="boxhomecell">
+                <div class="boxhomemobile">
                     papapapapa
 
                 </div>
 
 
-                <div class="boxhomecell">
+                <div class="boxhomemobile">
                     papapapapa
 
                 </div>
@@ -95,6 +123,21 @@
 
 
     </div>
+
+    <div id="contact">
+        <div class="flex">
+
+                <input type="text" placeholder="escreva seu nome">
+                <input type="text" placeholder="escreva seu e-mail">
+                <textarea name="contato" cols="10" rows="3" ></textarea>
+                <button id="btn">Enviar</button>
+
+        </div>
+
+
+    </div>
+
+
 
     <script>
         var btnhamb = document.getElementById("btnhamb");

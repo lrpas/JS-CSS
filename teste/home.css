@@ -20,7 +20,7 @@
     box-shadow: 1px 1px 1px 1px;
 }
 
-.boxhomecell{
+.boxhomemobile{
     border: 1px solid black;
     width: 600px;
     height: 600px;
@@ -30,7 +30,7 @@
     margin-bottom: 10%;
 }
 
-.homecell{
+.homemobile{
     border: 1px solid blue;
     width: 100vw;
     height: 100vh;
@@ -53,20 +53,20 @@
         display:none;
     }
 
-    #navbarcell{
+    #navbarmobile{
         color: aliceblue;
     }
 
 
 
-    .boxhomecell{
+    .boxhomemobile{
         background-color: brown;
     }
     
 }
 @media screen and (min-width: 1000px) {
     
-    .homecell{
+    .homemobile{
         display: none;
     }
     
