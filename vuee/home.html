@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro a VUE</title>
+<script src="vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <p v-if="visao">funcionna</p>
+            <ol>
+        <li v-for="fruta in todos"> {{fruta.frutas}} </li>
+        
+        </ol>
+
+    </div>
+
+    <script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            visao: true,
+            todos:[
+                {frutas:'banana maça'},
+                {fazer:'estudar lpf'},
+                {fazer:'estudar vue'}
+
+            ]
+            
+        }
+
+
+    });
+
+    app.todos.push({frutas: 'melao'})
+    
+    </script>
+    
+</body>
+</html>

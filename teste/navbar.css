@@ -36,7 +36,19 @@
     width: 400px;
     height: 400px;
     background-color: rgba(128, 128, 128, 0.808);
+    box-shadow: 0px 1px 1px 1px black;
+    position: fixed;
+    margin-top: 8px;
+    margin-left: 580px;
 }
+
+#menuhamb li{
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 5%;
+    list-style: none;
+}
+
 
 a{
     text-decoration:none; 
